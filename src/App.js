@@ -1,23 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/NavBar/NavBar';
+import TopBar from './components/NavBar/TopBar';
+import CustomCarousel from './components/HeroSection/HeroSection';
+import Carousel from './components/Swiper/Swiper';
+import Section1 from './components/Sections/Section1';
+import Section2 from './components/Sections/Section2';
+import Section3 from './components/Sections/Section3';
+import Section4 from './components/Sections/Section4';
+import Section5 from './components/Sections/Section5';
+import Section6 from './components/Sections/Section6';
+import EndSection from './components/EndSection/EndSection';
+import Footer from './components/Footer/Footer';
+import { IconButton } from '@mui/material';
+import ChatIcon from '@mui/icons-material/Chat';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='home-page'>
+      <TopBar />
+      <Navbar/>
+      <CustomCarousel/>
+      <div className="intro-text">
+        <p className="text1">HONEST. CLEAN. NATURAL.</p>
+        <p className="text2">Choose Your Favourite</p>
+        
+      </div>
+      <Carousel />
+      <Section1/>
+      <Section2/>
+      <Section3/>
+      <Section4/>
+      <div style={{ backgroundColor: '#fff9e5' }}>
+      <Section5/>
+      </div>
+      <Section6/>
+      <div className="intro-text2">
+        <h1>The Näck Journal</h1>
+        
+      <EndSection/>
+      </div>
+      <div className="sticky-message-icon">
+        <IconButton style={{ color: 'white' }}>
+          <ChatIcon />
+        </IconButton>
+      </div>
+      <Footer/>
     </div>
   );
 }
