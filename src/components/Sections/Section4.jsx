@@ -3,7 +3,7 @@ import image from "../../assets/body-item/4.JPG"
 import "./Section2.css"
 
 
-const Section1 = () => {
+const Section4 = () => {
   return (
     <div className="section2-container">
     
@@ -27,4 +27,4 @@ const Section1 = () => {
   )
 }
 
-export default Section1
+export default Section4

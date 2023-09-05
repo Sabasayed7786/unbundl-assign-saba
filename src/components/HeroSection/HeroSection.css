@@ -41,5 +41,18 @@
     cursor: pointer;
   }
   
+  .mobile-text {
+    font-size: 16px; /* Adjust the font size as needed for mobile view */
+  }
   
+  @media (max-width: 768px) {
+    /* Adjust the font size for screens with a maximum width of 768px (typical for mobile devices) */
+    .mobile-text {
+      font-size: 10px; /* Reduce the font size for mobile view */
+    }
+
+    .carousel-text{
+      font-size: 10px;
+    }
+  }
   

@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/NavBar/NavBar';
 import TopBar from './components/NavBar/TopBar';
-import CustomCarousel from './components/HeroSection/HeroSection';
+import  HeroSection from './components/HeroSection/HeroSection';
 import Carousel from './components/Swiper/Swiper';
 import Section1 from './components/Sections/Section1';
 import Section2 from './components/Sections/Section2';
@@ -19,7 +19,7 @@ function App() {
     <div className='home-page'>
       <TopBar />
       <Navbar/>
-      <CustomCarousel/>
+      < HeroSection/>
       <div className="intro-text">
         <p className="text1">HONEST. CLEAN. NATURAL.</p>
         <p className="text2">Choose Your Favourite</p>
